@@ -36,4 +36,20 @@
       "last 1 safari version"
     ]
   }
+  "savedPosts": [
+    {
+      "title": "Post Title 1",
+      "name": "Author 1",
+      "image": "url_to_image_1",
+      "description": "Description for post 1"
+    },
+    {
+      "title": "Post Title 2",
+      "name": "Author 2",
+      "image": "url_to_image_2",
+      "description": "Description for post 2"
+    }
+    // Add more posts as needed
+  ]
+
 }
