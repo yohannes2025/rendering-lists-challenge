@@ -1,22 +1,21 @@
-import React, { Component } from "react";
-import { savedPosts } from "./posts.json"; // Adjust the path if necessary
-import styles from "./Content.module.css"; // Assuming you have a CSS module
-import PostItem from "./PostItem"; // Import the PostItem component
+import React from "react";
 
-class Content extends Component {
-  render() {
-    return (
-      <div className={styles.Content}>
-        <div>
-          <h1>My Posts</h1>
-        </div>
-        <div className={styles.SearchResults}>
-          <PostItem posts={savedPosts} /> {/* Pass posts as a prop */}
-        </div>
-      </div>
-    );
-  }
+function PostItem({ posts }) {
+  return (
+    <div>
+      {posts.map((post, index) => {
+        const { title, name, description, image } = post;
+        return (
+          <div className="PostItem" key={index}>
+            <h2>{title}</h2>
+            <h3>{name}</h3>
+            <img src={image} alt={title} />
+            <p>{description}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
-export default Content;
-    
+export default PostItem;
