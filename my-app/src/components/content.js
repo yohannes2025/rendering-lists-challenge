@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import { savedPosts } from "./posts.json"; // Import posts.json
-import PostItem from "./PostItem"; // Import PostItem component
-import "./Content.module.css"; // Import CSS file
+import React from "react";
+import { savedPosts } from "./posts.json";
+import PostItem from "./PostItem";
+import styles from "./Content.module.css";
 
-class Content extends Component {
+class Content extends React.Component {
   render() {
     return (
-      <div>
-        <h1>My Posts</h1>
-        <div className="SearchResults">
+      <div className={styles.container}>
+        <h1 className={styles.title}>My Posts</h1>
+        <div className={styles.searchResults}>
           <PostItem posts={savedPosts} />
         </div>
       </div>
