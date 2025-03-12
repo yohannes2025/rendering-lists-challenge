@@ -12,3 +12,20 @@
     "image": "https://via.placeholder.com/150"
   }
 ]
+
+[
+  {
+    "id": 1,
+    "title": "React Basics",
+    "name": "John Doe",
+    "image": "https://via.placeholder.com/150",
+    "description": "An introduction to React."
+  },
+  {
+    "id": 2,
+    "title": "Advanced React",
+    "name": "Jane Smith",
+    "image": "https://via.placeholder.com/150",
+    "description": "Deep dive into React hooks."
+  }
+]
